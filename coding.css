@@ -1,0 +1,400 @@
+body, html{
+    width: 100%;
+    margin: 0px;
+    background-color: rgb(27, 26, 26);
+    overflow-x: hidden;
+    font-family: 'Readex Pro';
+    height: fit-content;
+}
+nav{
+    width: 100%;
+    background-color: rgb(27, 26, 26);
+    height: 80px;
+    display: flex;
+    position: fixed;
+    margin-top: -80px;
+}
+#main-logo-nav{
+    width: 80px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#main-heading-nav{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 38px;
+    width: 250px;
+}
+#nav-link-list{
+    display: flex;
+    width: 85%;
+    margin-top: 40px;
+    margin-left: 350px;
+}
+.nav-links-list-items{
+    margin-left: 5%;
+    list-style-type: none;
+}
+.nav-links-list-items-a{
+    color: white;
+    text-decoration: none;
+}
+#coming-soon-nav-list-item{
+    color: rgb(182, 131, 182);
+}
+/*header*/
+header{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+#header-right-div{
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+}
+#header-left-div{
+    width: 50%;
+}
+#header-main-img{
+    margin-left: 200px;
+    margin-top: 70px;
+    height: 350px;
+    animation-name: header-main-img;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    position: absolute;
+}
+@keyframes header-main-img {
+    from{
+        margin-top: 110px;
+    }to{
+        margin-top: 70px;
+
+    }
+}
+#header-main-heading{
+    font-size: 80px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 23%;
+    margin-top: 25%;
+}
+#header-second-heading{
+    font-size: 20px;
+    color: rgb(182, 131, 182);
+    margin-left: 32%;
+}
+#header-deco-one{
+    position: absolute;
+    transform: rotate(-60deg);
+    margin-left: 20%;
+    margin-top: -50px;
+    height: 700px;
+    width: 150px;
+    border-radius: 500px;
+    border: 10px solid rgba(211, 211, 211, 0.192);
+}
+#header-deco-two{
+    color: rgba(211, 211, 211, 0.192);
+    position: absolute;
+    font-size: 40px;
+    margin-left: 38%;
+    animation: circle 6s linear infinite;
+    animation-delay: 0.5s;
+}
+#header-deco-three{
+    color: rgba(211, 211, 211, 0.192);
+    position: absolute;
+    font-size: 30px;
+    margin-top: 30%;
+    margin-left: 5%;
+    animation: circle 6s linear infinite;
+}
+@keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translate(-165px)
+                rotate(0deg);
+    }
+    100%{
+      transform:rotate(360deg)
+                translate(-165px)
+                rotate(-360deg);
+    }
+  }
+
+/*work division div */
+#work-divions-div{
+    width: 100%;
+    display: flex;
+    margin-top: 220px;
+    padding-left: 10%;
+    opacity: 0;
+}
+.work-division-divs{
+    width: 17%;
+    height: 260px;
+    background-color: rgba(223, 222, 222, 0.692);
+    margin-left: 40px;
+    border-radius: 10px;
+    box-shadow: 9px 9px 0px rgb(146, 98, 146);
+}
+.work-divisions-headings{
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+.work-divisions-heading{
+    width: 65%;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.work-divisions-imgs{
+    width: 60px;
+    height: 60px;
+}
+.work-divisions-p{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+/*avtivities*/
+#activities-div{
+    width: 100%;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+#activities-img{
+    width: 33%;
+    height: 500px;
+    border-radius: 600px;
+    background-image: url(/pictures/codingCC.png);
+    border: 5px solid rgba(223, 222, 222, 0.692);;
+    background-size: cover;
+    background-position-y: -60px;
+    box-shadow: 10px 10px 10px black;
+    margin-left: 3%;
+    margin-top: 80px;
+    opacity: 0;
+}
+
+#activities-img-bl{
+    width: 100%;
+    height: 100%;
+    border-radius: 600px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+#activities-heading{
+    position: absolute;
+    color: rgb(182, 131, 182);
+    font-size: 50px;
+    margin-left: 50%;
+    opacity: 0;
+}
+#activities-p{
+    color: rgba(255, 255, 255, 0.781);
+    width: 40%;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-top: 10%;
+    opacity: 0;
+}
+#activities-button{
+    position: absolute;
+    width: 20%;
+    font-size: 20px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid rgb(182, 131, 182);
+    color: white;
+    margin-left: 59%;
+    margin-top: 25%;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+}
+#activities-button:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+#activities-link-button{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*about us*/
+#aboutUs-div{
+    width: 100%;
+    display: flex;
+    height: 700px;
+    margin-top: 150px;
+}
+#aboutUs-content{
+    width: 40%;
+    margin-top: 50px;
+    opacity: 0;
+}
+#aboutUs-img{
+    width: 45%;
+    height: 350px;
+    margin-left: 10%;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    margin-top: -50px;
+    opacity: 0;
+}
+#aboutsHeading{
+    color: rgb(182, 131, 182);
+    font-size: 50px;
+    margin-left: 9%;
+    margin-top: 0px;
+}
+#aboutUs-p{
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 20px;
+    margin-left: 13%;
+    margin-top: 6%;
+}
+
+/*contact us */
+#contactUs1-div{
+    width: 100%;
+
+}
+#contactUs-main-div{
+    position: fixed;
+    box-shadow: 2px 2px 2px black;
+    border: 3px solid rgb(182, 131, 182);
+    width: 30%;
+    height: 600px;
+    margin-left: 36%;
+    margin-top: 35px;
+    z-index: 99;
+    background-color: rgb(27, 26, 26);
+    border-radius: 8px;
+    opacity: 0;
+}
+#contactUs-button-link{
+    color: white;
+}
+.contactUs-divs{
+    width: 100%;
+}
+.contactUs-inputs-names{
+    font-size: 18px;
+    margin-left: 3%;
+    color: white;
+    font-weight: normal;
+}
+.contactUs-inputs{
+    width: 90%;
+    margin-left: 3%;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid rgb(182, 131, 182);
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(219, 219, 219);
+}
+#conctactUs-content-input{
+    width: 90%;
+    box-shadow: 15px 15px 10px black;
+    margin-left: 3%;
+    height: 220px;
+    border-radius: 5px;
+    border: 3px solid rgb(182, 131, 182);
+    background-color: rgb(219, 219, 219);
+}
+#contactUs-buttons-div{
+    display: flex;
+    margin-top: 20px;
+}
+.contactUs-buttons{
+    width: 25%;
+    height: 30px;
+    box-shadow: 2px 2px 3px black;
+    border: 2px solid rgb(182, 131, 182);
+    color: black;
+    font-weight: bold;
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Poiret One';
+    margin-left: 40%;
+}
+#contactUs-button-orange{
+    color: black;
+    background-color: rgb(182, 131, 182);
+    border: 0px solid transparent;
+    margin-left: 8px;
+}
+#fixed-body-b{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.829);
+    visibility: hidden;
+}
+footer{
+    background-color: rgb(107, 81, 110);
+    height: 200px;
+    margin-top: -100px;
+    opacity: 0;
+}
+#footer-flex{
+    display: flex;
+}
+.footer-headings{
+    color: white;
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.footer-Divs{
+    margin-left: 40px;
+}
+.footer-data{
+    color: white;
+}
+#footer-absolute{
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: #e75959;
+    margin-left: 25%;
+    margin-top: -20px;
+    display: flex;
+}
+#absolute-heading{
+    color: white;
+    font-size: 20px;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+#footer-absolute-heading{
+    background-color: rgb(43, 43, 43);
+    border: 0px solid transparent;
+    width: 130px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 15px;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-family: 'Comfortaa';
+}
+#social-media-footer{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.social-media-footer-images{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
